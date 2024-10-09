@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(25, 23, 23);
+    background-color: aliceblue;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 2rem auto;
+    padding: 0px 2rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
+.logo img {
+    width: 150px;
+    height: 90px;
+    border: none;
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.items a{
+    color: black;
+    text-decoration: none;
+}
+
+.items a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.items a:hover {
+    color: #ffcc00;
+}
+
+.active {
+    color: black !important;
+}
+
+button {
+  font-size: 2rem;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #b79612, #ffcc00);
+  border-radius: 10px;
+  box-shadow: rgba(95, 84, 84, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background: #ffffff;
+  outline: 1px solid rgba(253,213,1,255);
+  color: rgba(253,213,1,255);
+  border: none;
+}
+
+
+/* Tambahan, jika Anda ingin warna solid tanpa gambar */
+.background-page {
+    background-color: #deeef4; /* Atur warna sesuai keinginan */
+}
+
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dua kolom: 1 kolom untuk teks, 1 kolom untuk gambar */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.short-info {
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.hero-heading {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+  }
+
+.hero-sub-heading {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.hero-image {
+    justify-self: end; /* memastikan gambar ada di sebelah kanan */
+}
+
+.hero-image img{
+    max-width: 30%;
+    position: absolute;
+    top: 200px;
+    right: 190px;
+}
+
+
+.learn-more {
+    align-self: start;
+    margin-top: 3rem;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 800px) {
+    .items {
+      display: none;
+    }
+  
+    .row {
+      grid-template-columns: 1fr;
+    }
+    .learn-more {
+      align-self: start;
+      margin: 1rem 0px;
+    }
+
+    .hero-image {
+        justify-self: center;
+    }
+  }
+
+  
